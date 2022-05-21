@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 
-namespace GeekBrainsAlgos
+namespace JobLessonAlgo03v02Part01
 {
     class Program
     {
