@@ -3,12 +3,12 @@
 namespace JobLessonAlgo03v02Part01
 {
     public partial class BechmarkClass
-    { 
+    {
         /// <summary>
         /// Метод генерации случайных значений координат
         /// и расчёт дистанции для класса со значениями типа Float
         /// </summary>
-        static void DistanceClassFloat()
+        public static void DistanceClassFloat()
         {
             var x1 = new Random();
             var y1 = new Random();
@@ -23,13 +23,17 @@ namespace JobLessonAlgo03v02Part01
             { X = x2.NextSingle(), Y = y2.NextSingle() };
 
             PointDistanceClassFloat(pointClassFloat1, pointClassFloat2);
+            Console.WriteLine($"Координаты для Class Float:" + "\n" +
+                $"Точка 1 по X:{pointClassFloat1.X}, по Y:{pointClassFloat1.Y}" + "\n" +
+                $"Точка 2 по X:{pointClassFloat2.X}, по Y:{pointClassFloat2.Y}" + "\n" +
+                $"Расстояние: {PointDistanceClassFloat(pointClassFloat1, pointClassFloat2)}" + "\n");
         }
 
         /// <summary>
         /// Метод генерации случайных значений координат
         /// и расчёт дистанции для структуры со значениями типа Float
         /// </summary>
-        static void DistanceStructFloat()
+        public static void DistanceStructFloat()
         {
             var x3 = new Random();
             var y3 = new Random();
@@ -44,14 +48,17 @@ namespace JobLessonAlgo03v02Part01
             { X = x4.NextSingle(), Y = y4.NextSingle() };
 
             PointDistanceStructFloat(pointStructFloat1, pointStructFloat2);
-
+            Console.WriteLine($"Координаты для Struct Float:" + "\n" +
+                $"Точка 1 по X:{pointStructFloat1.X}, по Y:{pointStructFloat1.Y}" + "\n" +
+                $"Точка 2 по X:{pointStructFloat2.X}, по Y:{pointStructFloat2.Y}" + "\n" +
+                $"Расстояние: {PointDistanceStructFloat(pointStructFloat1, pointStructFloat2)}" + "\n");
         }
 
         /// <summary>
         /// Метод генерации случайных значений координат
         /// и расчёт дистанции для структуры со значениями типа Double
         /// </summary>
-        static void DistanceStructDouble()
+        public static void DistanceStructDouble()
         {
             var x5 = new Random();
             var y5 = new Random();
@@ -66,7 +73,10 @@ namespace JobLessonAlgo03v02Part01
             { X = x6.NextDouble(), Y = y6.NextDouble() };
 
             PointDistanceStructDouble(pointStructDouble1, pointStructDouble2);
-
+            Console.WriteLine($"Координаты для Struct Double:" + "\n" +
+                $"Точка 1 по X:{pointStructDouble1.X}, по Y:{pointStructDouble1.Y}" + "\n" +
+                $"Точка 2 по X:{pointStructDouble2.X}, по Y:{pointStructDouble2.Y}" + "\n" +
+                $"Расстояние: {PointDistanceStructDouble(pointStructDouble1, pointStructDouble2)}" + "\n");
         }
 
         /// <summary>
@@ -74,7 +84,7 @@ namespace JobLessonAlgo03v02Part01
         /// и расчёт дистанции для структуры со значениями типа Float
         /// без расчёта квадратного корня
         /// </summary>
-        static void DistanceStructFloatWothoutSQRT()
+        public static void DistanceStructFloatWothoutSQRT()
         {
             var x7 = new Random();
             var y7 = new Random();
@@ -89,6 +99,14 @@ namespace JobLessonAlgo03v02Part01
             { X = x8.NextSingle(), Y = y8.NextSingle() };
 
             PointDistanceStructWithoutSQRT(pointStructWithoutSQRT1, pointStructWithoutSQRT2);
+            Console.WriteLine($"Координаты для Struct Float без квадратного корня:" + "\n" +
+                $"Точка 1 по X:{pointStructWithoutSQRT1.X}, по Y:{pointStructWithoutSQRT1.Y}" + "\n" +
+                $"Точка 2 по X:{pointStructWithoutSQRT2.X}, по Y:{pointStructWithoutSQRT2.Y}" + "\n" +
+                $"Расстояние: {PointDistanceStructWithoutSQRT(pointStructWithoutSQRT1, pointStructWithoutSQRT2)}" + "\n");
+            //Console.WriteLine($"Coordinates Struct Float without SQRT:" + "\n" +
+            //    $"Point 1 by X:{pointStructWithoutSQRT1.X}, by Y:{pointStructWithoutSQRT1.Y}" + "\n" +
+            //    $"Point 2 by X:{pointStructWithoutSQRT2.X}, by Y:{pointStructWithoutSQRT2.Y}" + "\n" +
+            //    $"Distance: {PointDistanceStructWithoutSQRT(pointStructWithoutSQRT1, pointStructWithoutSQRT2)}" + "\n");
         }
 
         /// <summary>

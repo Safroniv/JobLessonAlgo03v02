@@ -32,6 +32,12 @@ namespace JobLessonAlgo03v02Part01
 
         static void Main(string[] args)
         {
+            BechmarkClass bechmarkClass = new();
+            bechmarkClass.TestDistanceClassFloat();
+            bechmarkClass.TestDistanceStructFloat();
+            bechmarkClass.TestDistanceStructDouble();
+            bechmarkClass.TestDistanceStructFloatWithoutSQRT();
+
             BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
         }
     }
