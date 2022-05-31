@@ -1,6 +1,6 @@
 ﻿namespace JobLessonAlgo03v02Part01
 {
-    public partial class BechmarkClass
+    public partial class BenchmarkClass
     {
         /// <summary>
         /// Значимый тип обозначения координат точки типа float 

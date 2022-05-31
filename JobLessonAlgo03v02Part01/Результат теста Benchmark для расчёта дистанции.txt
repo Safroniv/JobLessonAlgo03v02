@@ -1,6 +1,0 @@
-|                             Method |     Mean |   Error |  StdDev |
-|----------------------------------- |---------:|--------:|--------:|
-|             TestDistanceClassFloat | 346.5 ns | 4.86 ns | 4.54 ns |
-|            TestDistanceStructFloat | 345.5 ns | 3.36 ns | 3.15 ns |
-|           TestDistanceStructDouble | 355.8 ns | 2.45 ns | 2.29 ns |
-| TestDistanceStructFloatWithoutSQRT | 361.2 ns | 7.15 ns | 9.55 ns |
