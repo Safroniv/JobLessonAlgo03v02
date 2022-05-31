@@ -1,0 +1,10 @@
+|                             Method |    N |        Mean |    Error |   StdDev |
+|----------------------------------- |----- |------------:|---------:|---------:|
+|             TestDistanceClassFloat |  100 |   120.70 ns | 0.548 ns | 0.486 ns |
+|            TestDistanceStructFloat |  100 |   119.09 ns | 0.504 ns | 0.472 ns |
+|           TestDistanceStructDouble |  100 |   214.28 ns | 2.088 ns | 1.953 ns |
+| TestDistanceStructFloatWithoutSQRT |  100 |    80.92 ns | 0.482 ns | 0.427 ns |
+|             TestDistanceClassFloat | 1000 | 1,213.35 ns | 5.221 ns | 4.360 ns |
+|            TestDistanceStructFloat | 1000 | 1,205.38 ns | 4.534 ns | 4.241 ns |
+|           TestDistanceStructDouble | 1000 | 2,150.83 ns | 9.869 ns | 8.241 ns |
+| TestDistanceStructFloatWithoutSQRT | 1000 |   775.92 ns | 7.255 ns | 6.786 ns |
